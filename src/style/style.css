@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.preloader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: black;
+}
+
+.loading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.support-hidden {
+  transition: opacity 0.5s;
+}
+
+.logo-img {
+  width: 1px;
+  height: 80px;
+}
+
+.aturBG {
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
+
+.search-width {
+  width: 60rem;
+  padding-left: 10px;
+}
+
+.sld {
+  width: 100%;
+  max-height: 30rem;
+  object-fit: cover;
+  background-size: cover;
+  object-position: bottom;
+}
+
+.h-article {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.h-article > .head-a {
+  border-bottom: 3px solid yellow;
+  width: 20%;
+}
+
+.card img {
+  width: 100%;
+  height: 650px;
+}
+
+.tombol-search {
+  width: 15rem;
+}
+
+.writer {
+  z-index: 10;
+}
+
+.write {
+  font-size: 5rem;
+}
+
+.carousel-item {
+  filter: brightness(50%);
+}
+
+.nav-f {
+  font-family: "Bungee Spice", cursive;
+  font-size: 1rem;
+  width: 130px;
+}
+
+.space-kun {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  grid-row: 4;
+}
+
+.promosi-movie {
+  font-family: "Cabin", sans-serif;
+}
+
+.nav-pad {
+  display: none;
+}
+
+.fail-req {
+  color: white;
+  font-size: 10rem;
+  position: relative;
+  z-index: 11;
+  width: 150%;
+  top: 50%;
+  left: 140%;
+
+}
+
+#cariM2 {
+  display: none;
+}
+#popular2 {
+  display: none;
+}
+#coming2 {
+  display: none;
+}
+#top2 {
+  display: none;
+}
+
+.separate{
+  padding-top: 20rem;
+}
+
+@media screen and (max-width: 1281px) {
+  .logo-img {
+    display: none;
+  }
+  #uses-nav {
+    justify-content: start;
+  }
+  .search-width {
+    width: 52rem;
+    padding-left: 10px;
+  }
+  .fail-req {
+    color: white;
+    font-size: 10rem;
+    position: relative;
+    z-index: 11;
+    width: 180%;
+    top: 50%;
+    left: 120%;
+  }
+  .nav-f {
+    width: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .search-width {
+    width: 60rem;
+    padding-left: 0;
+  }
+  .nav-pad {
+    display: block;
+  }
+
+  .nav-desk {
+    display: none;
+  }
+
+  .bg-me {
+    background-color: black;
+  }
+
+  .search-width {
+    width: 22rem;
+  }
+
+  .tombol-search {
+    width: 5rem;
+  }
+  #cariM {
+    display: none;
+  }
+  #popular {
+    display: none;
+  }
+  #coming {
+    display: none;
+  }
+  #top {
+    display: none;
+  }
+
+  #cariM2 {
+    display: block;
+  }
+  #popular2 {
+    display: block;
+  }
+  #coming2 {
+    display: block;
+  }
+  #top2 {
+    display: block;
+  }
+
+  .sld {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    background-size: cover;
+    object-position: bottom;
+  }
+  .write {
+    font-size: 4rem;
+  }
+
+  .space-kun {
+    font-size: 1rem;
+  }
+  .writer {
+    padding-top: 3rem;
+  }
+
+  .fail-req {
+    color: white;
+    font-size: 10rem;
+    position: relative;
+    z-index: 11;
+    width: 180%;
+    top: 50%;
+    left: 38%;
+  }
+  .logo-img {
+    width: 170px;
+    height: 70px;
+    display: block;
+  }
+  .x-side {
+    margin-left: 100px;
+  }
+  .card-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sld {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-size: cover;
+    object-position: bottom;
+  }
+  .write {
+    font-size: 2rem;
+  }
+  .space-kun {
+    font-size: 7px;
+  }
+  .logo-img {
+    width: 70px;
+    height: 50px;
+  }
+  .x-side {
+    margin-left: 150px;
+  }
+  .head-a h2 {
+    font-size: 1.5rem;
+  }
+  .fail-req {
+    color: white;
+    font-size: 5rem;
+    position: relative;
+    z-index: 11;
+    width: 70%;
+    top: 50%;
+    left: 20%;
+  }
+}
